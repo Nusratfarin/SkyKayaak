@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyKayak</title>
+    <style>
+        body {
+            background-image: url("F:\KayaakSKY\flat-lay-yellow-luggage-with-copy-space.jpg"); /* Add your image path here */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .search-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .search-button {
+            background-color: lightgreen; /* Changed to light green as mentioned */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">SkyKayak</div> <!-- Changed the name as mentioned -->
+        <!-- Add other elements like currency dropdown and sign-in button as per your requirements -->
+    </div>
+
+    <div class="search-container">
+        <div class="search-box">
+            <!-- Add your search fields (e.g., One Way, Round Way, etc.) here -->
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+</body>
+</html>

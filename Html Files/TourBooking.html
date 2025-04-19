@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SkyKayaak providing Best Tour Offers in the Country - SkyKayak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: white;
+            background-color: lightgreen;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .logo-bold {
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header h2 {
+            margin: 0;
+            padding-bottom: 10px;
+            color: lightgreen;
+            font-weight : bold;
+        }
+
+        .tour-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            background-color: rgba(144, 238, 144, 0.3) ;
+        }
+
+        .tour-offer {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f8f8f8;
+        }
+
+        .tour-offer img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .tour-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .tour-info h3 {
+            margin: 5px 0;
+        }
+
+        .tour-info p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .price-tag {
+            color: #e84118;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .tour-action {
+            padding: 10px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .tour-action select {
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .tour-action button {
+            background-color: #4CAF50; /* A green color */
+            color: white;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tour-action button:hover {
+            background-color: #45a049;
+        }
+
+        .package-images img {
+            width: 100%;
+            max-width: 100px; /* Adjust as necessary */
+            height: auto;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class = "logo-container">
+            <div class="logo"><span class="logo-bold">Sky</span>Kayaak</div>
+        </div>
+        <h2>SKYKAYAAK PROVIDING BEST TOUR OFFERS IN THE COUNTRY</h2>
+        <p>CHECK OUT OUR TOP-RATED TOURS</p>
+       
+    </header>
+
+    <main>
+        <div class="tour-grid">
+            <!-- Cox's Bazar Offer -->
+            <div class="tour-offer">
+                <img src="coxs.jpg" alt="Cox's Bazar">
+                <div class="tour-info">
+                    <h3>Cox's Bazar</h3>
+                    <p class="price-tag">10,000 Taka per person</p>
+                    <p>Staying in a reputed five-star hotel with a beach view. Visit Marine Drive and enjoy seafood at night.</p>
+                </div>
+                <div class="tour-action">
+                    <label for="coxs.jpg">Select person:</label>
+                    <select id="persons-coxs-bazar">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="days-coxs-bazar">Select total day:</label>
+                    <select id="days-coxs-bazar">
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <button>View Tour</button>
+                </div>
+                <div class="package-images">
+                    <!-- Placeholder for package images -->
+                    <img src="package1.jpg" alt="Package 1">
+                    <img src="package2.jpg" alt="Package 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <!-- Repeat blocks for Chattogram and Sylhet with unique IDs -->
+            <!-- Chattogram Offer -->
+            <div class="tour-offer">
+                <img src="chittagong.jpg" alt="Chattogram">
+                <div class="tour-info">
+                    <h3>Chattogram</h3>
+                    <p class="price-tag">12,000 taka per person including City Tour </p>
+                    <p> Exploring scenetic beauty of Kaptai and Rangamati and Beutiful Marine drive and Naval view inside the city </p>
+                </div>
+                <div class="tour-action">
+                    <label for="coxs.jpg">Select person:</label>
+                    <select id="persons-coxs-bazar">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="days-coxs-bazar">Select total day:</label>
+                    <select id="days-coxs-bazar">
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <button>View Tour</button>
+                </div>
+                <div class="package-images">
+                    <!-- Placeholder for package images -->
+                    <img src="package1.jpg" alt="Package 1">
+                    <img src="package2.jpg" alt="Package 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <!-- Sylhet Offer -->
+            <div class="tour-offer">
+                <img src="sylhet.jpg" alt="Sylhet">
+                <div class="tour-info">
+                    <h3>Sylhet</h3>
+                    <p class="price-tag">12,000 taka per person including accomodation,transportation and offering Food</p>
+                    <p>Discover the enchanting beauty of Sylhet with a visit to the serene Sunamganj, explore the breathtaking Tanguar Haor, and immerse yourself in the mysterious allure of Ratargul Swamp Forest</p>
+                   </div>
+                <div class="tour-action">
+                    <label for="coxs.jpg">Select person:</label>
+                    <select id="persons-coxs-bazar">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="days-coxs-bazar">Select total day:</label>
+                    <select id="days-coxs-bazar">
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <button>View Tour</button>
+                </div>
+                <div class="package-images">
+                    <!-- Placeholder for package images -->
+                    <img src="package1.jpg" alt="Package 1">
+                    <img src="package2.jpg" alt="Package 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <div class="tour-offer">
+                <img src="sundarban.jpg" alt="Sundarban">
+                <div class="tour-info">
+                    <h3>Sundarban</h3>
+                    <p class="price-tag">15,000 Taka per person</p>
+                    <p>Explore the world's largest mangrove forest, home to the majestic Royal Bengal Tiger and a myriad of wildlife.</p>
+                </div>
+                <div class="tour-action">
+                    <label for="persons-sundarban">Select person:</label>
+                    <select id="persons-sundarban">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="days-sundarban">Select total day:</label>
+                    <select id="days-sundarban">
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <button>View Tour</button>
+                </div>
+                <div class="package-images">
+                    <!-- Placeholder for package images -->
+                    <img src="package1.jpg" alt="Package 1">
+                    <img src="package2.jpg" alt="Package 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <!-- Saint-Martin Offer -->
+            <div class="tour-offer">
+                <img src="saintmartin.jpg" alt="Saint-Martin">
+                <div class="tour-info">
+                    <h3>Saint-Martin</h3>
+                    <p class="price-tag">13,000 Taka per person</p>
+                    <p>Relax on the serene beaches of Bangladesh's only coral island, known for its blue water and coconut palms.</p>
+                </div>
+                <div class="tour-action">
+                    <label for="persons-saint-martin">Select person:</label>
+                    <select id="persons-saint-martin">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="days-saint-martin">Select total day:</label>
+                    <select id="days-saint-martin">
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <button>View Tour</button>
+                </div>
+                <div class="package-images">
+                    <!-- Placeholder for package images -->
+                    <img src="package1.jpg" alt="Package 1">
+                    <img src="package2.jpg" alt="Package 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <!-- Bandarban Offer -->
+            <div class="tour-offer">
+                <img src="bandarban.jpg" alt="Bandarban">
+                <div class="tour-info">
+                    <h3>Bandarban</h3>
+                    <p class="price-tag">14,000 Taka per person</p>
+                    <p>Embark on an adventure to the picturesque hill tracts, featuring tribal culture, and breathtaking landscapes.</p>
+                </div>
+                <div class="tour-action">
+                    <label for="persons-bandarban">Select person:</label>
+                    <select id="persons-bandarban">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="days-bandarban">Select total day:</label>
+                    <select id="days-bandarban">
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <button>View Tour</button>
+                </div>
+                <div class="package-images">
+                    <!-- Placeholder for package images -->
+                    <img src="package1.jpg" alt="Package 1">
+                    <img src="package2.jpg" alt="Package 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SkyKayak. All rights reserved.</p>
+    </footer>
+</body>
+</html>

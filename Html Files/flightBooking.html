@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyKayaak</title>
+    <style>
+        body {
+            background-image: url("kayyakimg.jpg");
+            background-size: cover;
+            font-family: 'Arial', sans-serif; /* Use Arial or a similar simple font */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Times new Roman', sans-sarif;
+            font-size: 32px;
+            font-weight: bold; /* Make it bolder for aesthetics */
+            color: white; /* White text color for contrast */
+            background-color: lightgreen;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 20px; /* Add some space on the right */
+        }
+
+        .sign-up-btn {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .currency-btn {
+            background-color: lightgreen;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 10px;
+            color: white;
+        
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+        }
+
+        .search-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            text-align: center;
+        }
+
+        .search-box label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .search-button {
+            background-color: lightgreen;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        select, input[type="date"], input[type="text"], input[type="range"], input[type="number"], input[type="text"] {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            font-family: 'Arial', sans-serif; /* Use Arial or a similar simple font */
+        }
+
+        .options-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow multiple rows of options */
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .option-input {
+            width: 48%;
+        }
+
+        .price-range-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .price-range {
+            width: 100%; /* Adjusted width */
+            -webkit-appearance: none;
+            appearance: none;
+            height: 5px;
+            background: lightgreen;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .slider-button {
+            width: 20px;
+            height: 20px;
+            background: lightgreen;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .price-range-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <div class="logo">SkyKayak</div>
+        </div>
+        <div>
+            <button class="currency-btn">
+                <select>
+                    <option value="dollar">$ USD</option>
+                    <option value="taka">৳ Taka</option>
+                </select>
+            </button>
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="search-box">
+            <label for="flight-choice">Choose Flight:</label>
+            <select id="flight-choice">
+                <option value="flight">Flight</option>
+                <option value="hotel">Hotel</option>
+                <option value="tour">Tour</option>
+            </select>
+
+            <div class="options-container">
+                <div class="option-input">
+                    <label for="from">From:</label>
+                    <input type="text" id="from" placeholder="Start Location">
+                </div>
+
+                <div class="option-input">
+                    <label for="to">To:</label>
+                    <input type="text" id="to" placeholder="Destination">
+                </div>
+            </div>
+
+            <div class="options-container">
+                <div class="option-input">
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date">
+                </div>
+
+                <div class="option-input">
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date">
+                </div>
+            </div>
+
+            <div class="options-container">
+                <div class="option-input">
+                    <label for="travel-class">Travel Class:</label>
+                    <select id="travel-class">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First Class</option>
+                    </select>
+                </div>
+
+                <div class="option-input">
+                    <label for="num-persons">Number of Persons:</label>
+                    <input type="number" id="num-persons" min="1" value="1">
+                </div>
+            </div>
+
+            <div class="options-container">
+                <label for="price-range">Price Range:</label>
+                <input type="text" id="price-range" class="price-range-input" placeholder="[0-1000, 1000-2000]">
+            </div>
+
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+</body>
+</html>

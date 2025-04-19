@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyKayak</title>
+    <style>
+        body {
+            background-image: url("kayyakimg.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .search-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .search-button {
+            background-color: lightgreen;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        select, input[type="date"], input[type="text"] {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">SkyKayak</div>
+        <div>
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="search-box">
+            <label for="flight-choice">Choose Flight:</label>
+            <select id="flight-choice">
+                <option value="flight">Flight</option>
+                <option value="hotel">Hotel</option>
+                <option value="tour">Tour</option>
+            </select>
+            <br>
+
+            <label for="from">From:</label>
+            <input type="text" id="from" placeholder="Dhaka">
+            <label for="to">To:</label>
+            <input type="text" id="to" placeholder="Cox's Bazar">
+            <br>
+
+            <label for="departure-date">Journey Date:</label>
+            <input type="date" id="departure-date">
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date">
+            <br>
+
+            <label for="price-range">Price Range:</label>
+            <input type="text" id="price-range" placeholder="$100 - $500">
+            <br>
+
+            <label for="travel-class">Travel Class:</label>
+            <select id="travel-class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+            </select>
+            <br>
+
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+</body>
+</html>
